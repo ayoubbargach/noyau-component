@@ -7,7 +7,7 @@ bind_ip = '192.168.43.27'
 bind_port = 10000
 
 #Connection to the db
-db = MySQLdb.connect( host="172.17.0.2", user="root", passwd="123456", db="test")
+db = MySQLdb.connect( host="172.17.0.2", user="", passwd="", db="test")
 
 
 #Server socket
