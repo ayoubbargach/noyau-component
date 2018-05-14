@@ -8,11 +8,11 @@ def execute_command( bashcommand ) :
 
 	return output
 
-print( execute_command(  "mysql -uroot -p123456 -h 172.17.0.2 -P 3306 -e \"CREATE DATABASE test;\"" ))
-print( execute_command(  "mysql -uroot -p123456 -h 172.17.0.2 -P 3306 test -e \"CREATE TABLE test (id int, nom varchar(255) );\"" ))
+print( execute_command(  "mysql -uroot - -h 172.17.0.2 -P 3306 -e \"CREATE DATABASE test;\"" ))
+print( execute_command(  "mysql -uroot - -h 172.17.0.2 -P 3306 test -e \"CREATE TABLE test (id int, nom varchar(255) );\"" ))
 
 
 # The part where we insert the data
-print( execute_command(  "mysql -uroot -p123456 -h 172.17.0.2 -P 3306 test -e \"INSERT INTO test VALUES(23, 'test2');\"" ))
+print( execute_command(  "mysql -uroot - -h 172.17.0.2 -P 3306 test -e \"INSERT INTO test VALUES(23, 'test2');\"" ))
 
 
